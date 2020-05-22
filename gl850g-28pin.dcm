@@ -1,0 +1,26 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP GL850G-28pin
+D Genesys GL850G USB 2.0 in SSOP28 package
+K Genesys USB 2.0 hub controller
+$ENDCMP
+#
+$CMP PIC18F24K20_ISS
+D 16K Flash, 768Byte RAM, 256Byte EEPROM, PIC18 Microcontroller ADC PWM SPI I2C USART in SSOP28 package
+K microcontroller PIC18F flash XLP
+F http://ww1.microchip.com/downloads/en/DeviceDoc/40001303H.pdf
+$ENDCMP
+#
+$CMP PIC18F25K20_ISS
+D 32K Flash, 1536Byte RAM, 256Byte EEPROM, PIC18 Microcontroller ADC PWM SPI I2C USART in SSOP28 package
+K microcontroller PIC18F flash XLP
+F http://ww1.microchip.com/downloads/en/DeviceDoc/40001303H.pdf
+$ENDCMP
+#
+$CMP PIC18F26K20_ISS
+D 64K Flash, 3936Byte RAM, 1KByte EEPROM, PIC18 Microcontroller ADC PWM SPI I2C USART in SSOP28 package
+K microcontroller PIC18F flash XLP
+F http://ww1.microchip.com/downloads/en/DeviceDoc/40001303H.pdf
+$ENDCMP
+#
+#End Doc Library

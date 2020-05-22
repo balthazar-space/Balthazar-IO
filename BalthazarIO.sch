@@ -307,21 +307,6 @@ F 3 " ~" H 8950 4750 50  0001 C CNN
 	1    8800 4800
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Connector:USB_A J3
-U 1 1 5EC3351A
-P 7400 3400
-F 0 "J3" H 7170 3389 50  0000 R CNN
-F 1 "USB_A" H 7170 3298 50  0000 R CNN
-F 2 "Connector_USB:USB_A_CNCTech_1001-011-01101_Horizontal" H 7550 3350 50  0001 C CNN
-F 3 " ~" H 7550 3350 50  0001 C CNN
-	1    7400 3400
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	6400 3400 7100 3400
-Wire Wire Line
-	6400 3500 7100 3500
 Wire Wire Line
 	7400 4700 7400 5200
 $Comp
@@ -376,8 +361,6 @@ F 3 "~" H 3850 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 3600 3950 3600
-Wire Wire Line
 	4800 4000 3850 4000
 Wire Wire Line
 	3850 4000 3850 3900
@@ -412,8 +395,6 @@ F 3 "~" H 3550 3750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Connection ~ 3850 4000
-Wire Wire Line
-	3550 3600 3700 3600
 Wire Wire Line
 	3550 3900 3550 4000
 $Comp
@@ -455,7 +436,7 @@ U 1 1 5EC6C70E
 P 3050 3750
 F 0 "C1" H 3165 3796 50  0000 L CNN
 F 1 "330uF" H 3165 3705 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P2.50mm" H 3050 3750 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 3050 3750 50  0001 C CNN
 F 3 "~" H 3050 3750 50  0001 C CNN
 	1    3050 3750
 	1    0    0    -1  
@@ -485,8 +466,6 @@ Wire Wire Line
 	3050 4250 3000 4250
 Connection ~ 3050 4250
 Wire Wire Line
-	4800 4300 3450 4300
-Wire Wire Line
 	3450 4300 3450 3950
 Wire Wire Line
 	3450 3950 3350 3950
@@ -502,17 +481,6 @@ F 3 "" H 3050 4250 50  0001 C CNN
 	1    3050 4250
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Fuse_Small F1
-U 1 1 5EC8606C
-P 2850 3500
-F 0 "F1" H 2850 3315 50  0000 C CNN
-F 1 "500mA" H 2850 3406 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" H 2850 3500 50  0001 C CNN
-F 3 "~" H 2850 3500 50  0001 C CNN
-	1    2850 3500
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5900 2650 5900 2850
 Connection ~ 5800 2700
@@ -523,8 +491,6 @@ Wire Wire Line
 	2300 4500 2400 4500
 Wire Wire Line
 	4150 2850 3050 2850
-Text Notes 3100 2450 0    47   ~ 0
-Fuse protects from USB shorts. These are not external ports (maybe one?),\nso there is not much danger of overcurrent. 
 Wire Wire Line
 	7100 2300 7200 2300
 Wire Wire Line
@@ -565,7 +531,7 @@ U 1 1 5ECEA9EC
 P 8600 2450
 F 0 "C17" H 8715 2496 50  0000 L CNN
 F 1 "100uF" H 8715 2405 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 8600 2450 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 8600 2450 50  0001 C CNN
 F 3 "~" H 8600 2450 50  0001 C CNN
 	1    8600 2450
 	1    0    0    -1  
@@ -586,8 +552,8 @@ L Device:CP1 C15
 U 1 1 5ECEC0BC
 P 7200 2450
 F 0 "C15" H 7315 2496 50  0000 L CNN
-F 1 "100uF" H 7315 2405 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 7200 2450 50  0001 C CNN
+F 1 "47uF" H 7315 2405 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 7200 2450 50  0001 C CNN
 F 3 "~" H 7200 2450 50  0001 C CNN
 	1    7200 2450
 	1    0    0    -1  
@@ -595,13 +561,8 @@ $EndComp
 Wire Wire Line
 	8800 4300 8900 4300
 Wire Wire Line
-	7400 3800 7500 3800
-Wire Wire Line
 	8900 4300 9050 4300
 Connection ~ 8900 4300
-Wire Wire Line
-	7500 3800 7650 3800
-Connection ~ 7500 3800
 Wire Wire Line
 	8500 2800 8500 3700
 $Comp
@@ -621,8 +582,6 @@ Wire Wire Line
 	2600 5200 3000 5200
 Wire Wire Line
 	2600 5300 3350 5300
-Wire Wire Line
-	3350 5300 3350 4450
 Connection ~ 3350 4250
 Wire Wire Line
 	2600 5000 2700 5000
@@ -672,8 +631,6 @@ F 3 "" H 7100 2550 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Connection ~ 7100 2800
-Wire Wire Line
-	7100 2800 7100 3200
 Wire Wire Line
 	7100 2800 7200 2800
 $Comp
@@ -728,81 +685,6 @@ F 3 "~" H 4250 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR010
-U 1 1 5EDF4F57
-P 3500 5650
-F 0 "#PWR010" H 3500 5400 50  0001 C CNN
-F 1 "GND" H 3505 5477 50  0000 C CNN
-F 2 "" H 3500 5650 50  0001 C CNN
-F 3 "" H 3500 5650 50  0001 C CNN
-	1    3500 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Memory_EEPROM:AT24CS02-XHM U2
-U 1 1 5EDFC458
-P 3900 5300
-F 0 "U2" H 3900 5781 50  0000 C CNN
-F 1 "AT24CS02-XHM" H 3900 5690 50  0000 C CNN
-F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 3900 5300 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8815-SEEPROM-AT24CS01-02-Datasheet.pdf" H 3900 5300 50  0001 C CNN
-	1    3900 5300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3500 5400 3500 5600
-Wire Wire Line
-	3500 5200 3500 5300
-Wire Wire Line
-	3500 5300 3500 5400
-Connection ~ 3500 5300
-Connection ~ 3500 5400
-Wire Wire Line
-	4300 5400 4300 5600
-Wire Wire Line
-	4300 5600 3900 5600
-Wire Wire Line
-	3900 5600 3500 5600
-Connection ~ 3900 5600
-Connection ~ 3500 5600
-Wire Wire Line
-	3500 5600 3500 5650
-$Comp
-L Device:C_Small C19
-U 1 1 5EE230FC
-P 3500 5100
-F 0 "C19" H 3592 5146 50  0000 L CNN
-F 1 "100n" H 3592 5055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 3500 5100 50  0001 C CNN
-F 3 "~" H 3500 5100 50  0001 C CNN
-	1    3500 5100
-	1    0    0    -1  
-$EndComp
-Connection ~ 3500 5200
-Wire Wire Line
-	3500 5000 3700 5000
-Connection ~ 2850 3600
-Wire Wire Line
-	2850 3600 3050 3600
-Wire Wire Line
-	4650 5200 4300 5200
-$Comp
-L Device:R R9
-U 1 1 5EE45011
-P 3950 3750
-F 0 "R9" H 4020 3796 50  0000 L CNN
-F 1 "10K" V 3950 3650 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 3880 3750 50  0001 C CNN
-F 3 "~" H 3950 3750 50  0001 C CNN
-	1    3950 3750
-	1    0    0    -1  
-$EndComp
-Connection ~ 3950 3600
-Wire Wire Line
-	3950 3600 4050 3600
-Wire Wire Line
-	4650 4400 4650 5200
-$Comp
 L BalthazarIO-rescue:INDUCTOR_SMALL-BalthazarPSU-rescue L6
 U 1 1 5EDAF5FF
 P 8500 2550
@@ -840,7 +722,7 @@ U 1 1 5ECB699F
 P 8250 2450
 F 0 "C23" H 8365 2496 50  0000 L CNN
 F 1 "100uF" H 8365 2405 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 8250 2450 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 8250 2450 50  0001 C CNN
 F 3 "~" H 8250 2450 50  0001 C CNN
 	1    8250 2450
 	1    0    0    -1  
@@ -870,7 +752,7 @@ U 1 1 5ECD9200
 P 6850 2450
 F 0 "C21" H 6965 2496 50  0000 L CNN
 F 1 "100uF" H 6965 2405 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 6850 2450 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 6850 2450 50  0001 C CNN
 F 3 "~" H 6850 2450 50  0001 C CNN
 	1    6850 2450
 	1    0    0    -1  
@@ -889,10 +771,8 @@ Connection ~ 7650 3800
 Wire Wire Line
 	9050 4300 9050 5200
 Connection ~ 9050 4300
-Text Notes 750  7600 0    59   ~ 0
+Text Notes 800  6400 0    59   ~ 0
 Internal usb hub. We want=need:\n-> 5VDC power source\n-> 1 x USB1.1 keyboard + touchpad + PSU\n-> switched USB2.0 webcam\n-> switched USB2.0 audio + mic\n\nSpecialized power charger USB-OTG with "condom" - adapt the PSU USB-OTG with this option. \nPSU charger can act as OTG when DCin disabled/ unplugged (Vbus>Vdc).
-Text GLabel 2550 3550 1    50   Output ~ 0
-Vbus
 Text GLabel 2400 3550 1    50   Output ~ 0
 5V
 Wire Wire Line
@@ -924,7 +804,7 @@ F 3 "" H 2400 4250 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	2400 4000 2400 3600
-Text Notes 6950 2250 0    50   ~ 0
+Text Notes 5350 850  0    50   ~ 0
 Here we can use AIC1526-0 separate power switches
 $Comp
 L Interface_USB:AIC1526-0 U3
@@ -1041,53 +921,36 @@ Wire Wire Line
 Wire Wire Line
 	4500 1000 4500 1300
 Connection ~ 4600 1000
-Connection ~ 4500 1600
 Text Notes 4800 2050 1    50   ~ 0
 ENPort1\nOVRP1\nOVRP2\nENPort2
 Text Notes 4950 1750 0    50   ~ 0
 dual power switch
 Text Notes 5350 950  0    50   ~ 0
 Or Texas Instruments TPS2044, TPS2054QUAD POWER-DISTRIBUTION SWITCHES
-Text Notes 3150 1400 0    50   ~ 0
+Text Notes 3400 2150 0    50   ~ 0
 FLGA - to OVERCURRENT1\nFLGB - to OVERCURRENT2\nCTLA, CTLB - high = on\nswitch to ground disables the USB port
-$Comp
-L Switch:SW_DIP_x01 SW1
-U 1 1 5EF29939
-P 4200 1600
-F 0 "SW1" H 4200 1550 50  0000 C CNN
-F 1 "SW_DIP_x01" H 4200 1776 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W7.62mm_P2.54mm" H 4200 1600 50  0001 C CNN
-F 3 "~" H 4200 1600 50  0001 C CNN
-	1    4200 1600
-	1    0    0    -1  
-$EndComp
 $Comp
 L Switch:SW_DIP_x01 SW2
 U 1 1 5EF2C4E3
-P 4200 1900
-F 0 "SW2" H 4200 1850 50  0000 C CNN
-F 1 "SW_DIP_x01" H 4200 2076 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W7.62mm_P2.54mm" H 4200 1900 50  0001 C CNN
-F 3 "~" H 4200 1900 50  0001 C CNN
-	1    4200 1900
+P 4200 1450
+F 0 "SW2" H 4200 1400 50  0000 C CNN
+F 1 "SW_DIP_x01" H 4200 1626 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W7.62mm_P2.54mm" H 4200 1450 50  0001 C CNN
+F 3 "~" H 4200 1450 50  0001 C CNN
+	1    4200 1450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3900 1600 3900 1900
 $Comp
 L power:GND #PWR011
 U 1 1 5EF65FE5
-P 3900 1900
-F 0 "#PWR011" H 3900 1650 50  0001 C CNN
-F 1 "GND" H 3905 1727 50  0000 C CNN
-F 2 "" H 3900 1900 50  0001 C CNN
-F 3 "" H 3900 1900 50  0001 C CNN
-	1    3900 1900
+P 3900 1450
+F 0 "#PWR011" H 3900 1200 50  0001 C CNN
+F 1 "GND" H 3905 1277 50  0000 C CNN
+F 2 "" H 3900 1450 50  0001 C CNN
+F 3 "" H 3900 1450 50  0001 C CNN
+	1    3900 1450
 	1    0    0    -1  
 $EndComp
-Connection ~ 3900 1900
-Text Notes 3400 6550 0    50   ~ 0
-GL850G embeds an 8-bit RISC processor to manipulate the control/status registers and\n respond to the requests from USB host. \nFirmware of GL850G will control its general purpose I/O (GPIO) to access the external \nEEPROM and then respond to the host the customized PID and VID configured in the external EEPROM. \nDefault settings in the internal mask ROM is responded to the host without having external \nEEPROM. \nThe more complicated settings such as PID, VID, and number of downstream ports settings \nare easily achieved by programming the external EEPROM.
 Wire Wire Line
 	4150 2850 5900 2850
 Wire Wire Line
@@ -1287,7 +1150,6 @@ Connection ~ 6100 2800
 Connection ~ 6000 2800
 Wire Wire Line
 	6000 2800 6000 2700
-Connection ~ 4650 4400
 Wire Wire Line
 	4050 2450 4050 3600
 Connection ~ 4250 3600
@@ -1326,10 +1188,6 @@ Wire Wire Line
 Wire Wire Line
 	5800 2450 5800 2700
 Wire Wire Line
-	3950 3900 3950 4400
-Wire Wire Line
-	2850 3600 2550 3600
-Wire Wire Line
 	7500 4700 7650 4700
 Wire Wire Line
 	7400 5200 8500 5200
@@ -1344,9 +1202,9 @@ Wire Wire Line
 Connection ~ 8800 5200
 Connection ~ 8900 5200
 Wire Wire Line
-	4500 1900 4600 1900
+	4500 1450 4600 1450
 Wire Wire Line
-	4600 1900 4600 1300
+	4600 1450 4600 1300
 Connection ~ 4600 1300
 Wire Wire Line
 	7050 1300 7050 1900
@@ -1452,16 +1310,8 @@ Wire Wire Line
 Wire Wire Line
 	8500 4300 8800 4300
 Connection ~ 8800 4300
-Connection ~ 7100 3400
-Connection ~ 7100 3500
-Wire Wire Line
-	7100 3300 7100 3200
-Connection ~ 7100 3200
 Wire Wire Line
 	7100 3600 7100 3800
-Wire Wire Line
-	7100 3800 7400 3800
-Connection ~ 7400 3800
 Connection ~ 7100 4300
 Connection ~ 7100 4400
 Wire Wire Line
@@ -1471,13 +1321,6 @@ Wire Wire Line
 	7100 4500 7100 4700
 Wire Wire Line
 	7100 4700 7400 4700
-Wire Wire Line
-	2550 3550 2550 3600
-Connection ~ 2550 3600
-Wire Wire Line
-	2550 3600 2400 3600
-Wire Wire Line
-	4650 4400 4800 4400
 $Comp
 L Connector:USB_01x04 J10
 U 1 1 5F7269FF
@@ -1514,59 +1357,40 @@ $EndComp
 $Comp
 L Connector:USB_01x04 J8
 U 1 1 5F75E8F3
-P 6900 3400
-F 0 "J8" H 6792 3685 50  0000 C CNN
-F 1 "USB_01x04" H 6792 3594 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Horizontal" H 6900 3400 50  0001 C CNN
-F 3 "~" H 6900 3400 50  0001 C CNN
-	1    6900 3400
-	-1   0    0    -1  
+P 7300 3400
+F 0 "J8" H 7192 3685 50  0000 C CNN
+F 1 "USB1.1 keyboard+touchpad" V 7350 3400 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Horizontal" H 7300 3400 50  0001 C CNN
+F 3 "~" H 7300 3400 50  0001 C CNN
+	1    7300 3400
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3700 3600 3700 5000
-Connection ~ 3700 3600
+	3050 1000 4500 1000
 Wire Wire Line
-	3700 3600 3850 3600
-Connection ~ 3700 5000
+	3050 1000 3050 2850
 Wire Wire Line
-	3700 5000 3900 5000
+	3550 3600 3850 3600
 Wire Wire Line
-	2850 1000 4500 1000
+	3350 4250 3350 5300
 Wire Wire Line
-	2850 1000 2850 3400
-$Comp
-L Connector:Conn_01x04_Male J7
-U 1 1 5F6BDA34
-P 4300 4650
-F 0 "J7" V 4454 4362 50  0000 R CNN
-F 1 "Conn_01x04_Male" V 4363 4362 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 4300 4650 50  0001 C CNN
-F 3 "~" H 4300 4650 50  0001 C CNN
-	1    4300 4650
-	0    -1   -1   0   
-$EndComp
+	4550 3700 4550 3300
 Wire Wire Line
-	3950 4400 4500 4400
+	4550 3700 4800 3700
 Wire Wire Line
-	4500 4450 4500 4400
-Connection ~ 4500 4400
+	3850 3600 4050 3600
 Wire Wire Line
-	4500 4400 4650 4400
+	3450 4300 4800 4300
+NoConn ~ 4800 4400
 Wire Wire Line
-	4200 4450 3350 4450
-Connection ~ 3350 4450
+	2400 3600 3050 3600
+Connection ~ 3050 2850
 Wire Wire Line
-	3350 4450 3350 4250
+	7100 2800 7100 3300
 Wire Wire Line
-	4300 4450 4300 3700
+	7100 3800 7650 3800
 Wire Wire Line
-	4300 3700 4800 3700
+	6400 3400 7100 3400
 Wire Wire Line
-	4300 5300 4600 5300
-Wire Wire Line
-	4600 5300 4600 4200
-Wire Wire Line
-	4600 4200 4400 4200
-Wire Wire Line
-	4400 4200 4400 4450
+	6400 3500 7100 3500
 $EndSCHEMATC

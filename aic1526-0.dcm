@@ -1,0 +1,14 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AIC1526-0
+D Dual USB High-Side Power Switch, TSSOP8
+K Dual USB High-Side Power Switch
+$ENDCMP
+#
+$CMP AT24CS02-XHM
+D I2C Serial EEPROM, 2Kb (256x8) with Unique Serial Number, TSSOP8
+K I2C Serial EEPROM Nonvolatile Memory
+F http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8815-SEEPROM-AT24CS01-02-Datasheet.pdf
+$ENDCMP
+#
+#End Doc Library
