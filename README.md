@@ -2,7 +2,7 @@
 open-hardware laptop computer modules
 These are electronic schematic modules as presented at https://balthazar.space/wiki/Balthazar with the main aim for team access
 
-KiCad 5.1.5 files
+KiCad 5.1.5 files are uploaded here as well as the drawings and pictures.
 
 # balthazarIO
 
