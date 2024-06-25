@@ -1,6 +1,8 @@
 # Balthazar
-open-hardware laptop computer modules
-These are electronic schematic modules as presented at https://balthazar.space/wiki/Balthazar with the main aim for team access
+
+Open-hardware laptop computer modules description and concept.
+
+These are electronic schematic modules as presented at https://balthazar.space/wiki/Balthazar with the main aim for team access. See the [main repository](https://github.com/balthazar-space/balthazar) for other designs.
 
 KiCad 5.1.5 files are uploaded here as well as the drawings and pictures.
 
@@ -16,6 +18,15 @@ A simple usb 2.0 hub is enough, so a very ubiquitous usb hub chip was chosen. Ma
 
 Mass storage / system disk - microSD – and especially versions of SSD (sata or pcie) – should be plugged to usb3.x directly (via usb adapter).
 
+## License
+
+All resources licensed under the CERN Open Hardware Licence CERN-OHL W V.2.0
+
+Version 2.0 of the CERN-OHL introduces three variants of the licence – strongly (S) reciprocal, weakly (W) reciprocal and permissive (P) – which aim to address specific constraints caused by different collaboration models currently used in open-hardware projects. 
+
+The first two variants mean that if any product is made using an open hardware design, the design of that product, including any improvements or modifications, should be made available under the same licence as that of the original product. Permissive licences do not impose this condition.
+
+See the [LICENSE.md](./LICENSE.md) file for more information.
 
 ## Funding
 
