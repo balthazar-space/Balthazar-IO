@@ -2,7 +2,7 @@
 
 Open-hardware laptop computer modules description and concept.
 
-These are electronic schematic modules as presented at https://balthazar.space/wiki/Balthazar with the main aim for team access.
+These are electronic schematic modules as presented at https://balthazar.space/wiki/Balthazar with the main aim for team access. See the [main repository](https://github.com/balthazar-space/balthazar) for other designs.
 
 KiCad 5.1.5 files are uploaded here as well as the drawings and pictures.
 
