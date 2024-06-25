@@ -4,8 +4,6 @@ Open-hardware laptop computer modules description and concept.
 
 These are electronic schematic modules as presented at https://balthazar.space/wiki/Balthazar with the main aim for team access. See the [main repository](https://github.com/balthazar-space/balthazar) for other designs.
 
-KiCad 5.1.5 files are uploaded here as well as the drawings and pictures.
-
 # BalthazarIO
 
 BalthazarIO module is a simple USB2.0 four-port hub for the internal devices: keyboard and touchpad, webcam and optional audiocard. Additional simplification and pcb size reduction was done recently.
@@ -17,6 +15,8 @@ Since we are targeting the mini-computer family of systems (Raspberry PI. Banana
 A simple usb 2.0 hub is enough, so a very ubiquitous usb hub chip was chosen. Main mini-computer board usually provides a much better hub for 4 downstream usb devices. At this point this is still mainly USB 2.x - slowly moving to usb3.x.
 
 Mass storage / system disk - microSD – and especially versions of SSD (sata or pcie) – should be plugged to usb3.x directly (via usb adapter).
+
+KiCad 5.1.5 files are uploaded here as well as the drawings and pictures.
 
 ## License
 
