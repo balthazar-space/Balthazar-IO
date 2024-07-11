@@ -4,7 +4,7 @@ Open-hardware laptop computer modules description and concept.
 
 These are electronic schematic modules as presented at https://balthazar.space/wiki/Balthazar with the main aim for team access. See the [main repository](https://github.com/balthazar-space/balthazar) for other designs.
 
-# BalthazarIO
+# Balthazar IO
 
 BalthazarIO module is a simple USB2.0 four-port hub for the internal devices: keyboard and touchpad, webcam and optional audiocard. Additional simplification and pcb size reduction was done recently.
 
